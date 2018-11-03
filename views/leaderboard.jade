@@ -1,0 +1,50 @@
+doctype html
+html(lang='it')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(href='https://fonts.googleapis.com/css?family=Creepster', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='/style/style.css')
+    title=title
+  body#leaderboardBody
+    .row
+      div.box
+        h1 ENDLESS MODE
+        if endless!=''
+          table#endlessLeaderboard.tablesorter
+            thead
+              tr
+                th Posizione
+                th Utente
+                th Punteggio
+            tbody
+              - for (n=0; n<endless.length; n++) {
+                tr
+                  td #{n+1}
+                  td #{endless[n].username}
+                  td #{endless[n].score}
+              - }
+        else
+          h2 Non ci sono record per la Endless Mode!
+        h1 TIME ATTACK
+        if timeattack!=''
+          table#timeattackLeaderboard.tablesorter
+            thead
+              tr
+                th Posizione
+                th Utente
+                th Punteggio
+            tbody
+              - for (n=0; n<timeattack.length; n++) {
+                tr
+                  td #{n+1}
+                  td #{timeattack[n].username}
+                  td #{timeattack[n].score}
+              - }
+        else
+          h2 Non ci sono record per il Time Attack!
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+    script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js')
+    script(src='/scripts/jquery.tablesorter.min.js')
+    script(src='/scripts/tablesorter.js')

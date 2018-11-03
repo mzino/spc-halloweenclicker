@@ -1,0 +1,87 @@
+body#endlessBody {
+	height: calc(100vh - 40px);
+	background: url(../img/sfondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+body#loginBody,
+body#leaderboardBody {
+	background: url(../img/sfondo_login.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+h1 {
+	color: orange;
+	text-shadow: 0px 0px 5px black;
+	font-family: 'Creepster', cursive;
+	font-size: 3em;
+	margin-bottom: 8px;
+}
+.title {
+	font-size: 5em;
+}
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	color: white;
+}
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	margin-top: 0;
+}
+p {
+	font-family: 'IM Fell English', serif;
+	color: white;
+}
+.box {
+	border-radius: 10px;
+	background-color: rgba(34,34,34,.95);
+	box-shadow: 3px 3px 10px black;
+	padding: 50px;
+	margin: 80px auto;
+	width: 800px;
+	display: inline-block;
+}
+.description {
+	max-width: 70%;
+	font-style: italic;
+	margin: 100px auto;
+	font-size: 1.5em;
+	line-height: 1.8em;
+}
+#gaben {
+	position: absolute;
+	height: calc(100vh / 4.62);
+	width: calc(100vw / 11.36);
+	cursor: -webkit-grab; 
+	cursor: grab;
+}
+#bats {
+	position: absolute;
+	height: calc(100vh / 3.13);
+	width: calc(100vw / 6.4);
+	cursor: -webkit-grab; 
+	cursor: grab;
+}
+table {
+	font-family: 'Open Sans', sans-serif;
+	margin: 50px auto 100px auto;
+	max-width: 90%;
+	text-align: left;
+	color: white;
+	border: 1px #333 solid;
+}
+thead {
+	background-color: #424242;
+}
+th {
+	padding: 15px 30px;
+}
+td {
+	padding: 8px 30px;
+}
+#countdowntimer {
+	font-size: 0.75em;
+}

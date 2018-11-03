@@ -1,0 +1,28 @@
+doctype html
+html(lang='it')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet', type='text/css', href='https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css')
+    link(href='https://fonts.googleapis.com/css?family=Creepster', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='/style/style.css')
+    title=title
+  body#endlessBody
+    .row
+      #level
+        h1
+          | Zucche totali:&nbsp;
+          span#dolci #{score}
+      input(id='steamid', name='steamid', type='hidden', rel='#{user.id}', readonly='true')
+      #dialog(title='SPAZIO PC HALLOWEEN 2018')
+        p
+          | Clicca sulle zucche e guadagna punti!
+          br
+          | Ma attento: i pipistrelli ti rubano metà delle zucche!
+        p
+          strong ATTENZIONE:
+          | &nbsp; Il gioco potrebbe bloccarsi se la finestra viene messa in background! Nel caso, basta refreshare la pagina per riprendere.
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+    script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js')
+    script(src='/scripts/scripts.js')
